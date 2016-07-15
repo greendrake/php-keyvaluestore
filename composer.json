@@ -1,0 +1,24 @@
+{
+    "name": "greendrake/keyvaluestore",
+    "type": "library",
+    "description": "Handy wrapper for phpredis supporting prefixes",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Eugene Greendrake",
+            "email": "eugene@greendrake.info"
+        }
+    ],
+    "require": {
+        "ext-redis": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.3"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Greendrake\\KeyValueStore\\": ["src/"]
+        }
+    }
+}
