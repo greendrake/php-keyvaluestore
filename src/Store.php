@@ -12,10 +12,10 @@ class Store
     public function __construct(\Redis $client = null)
     {
         if ($client === null) {
-            $redis = new \Redis;
-            $redis->connect('127.0.0.1', '6379');
+            $client = new \Redis;
+            $client->connect('127.0.0.1', '6379');
         }
-        $this->setClient($redis);
+        $this->setClient($client);
     }
 
     public function setClient(\Redis $redis)
